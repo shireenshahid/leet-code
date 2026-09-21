@@ -8,7 +8,7 @@ import (
 )
 
 var longestCommonPrefixCmd = &cobra.Command{
-	Use:   "longest-common-prefix [solution]",
+	Use:   "longest-common-prefix",
 	Short: "Solve the Longest Common Prefix problem",
 
 	RunE: func(cmd *cobra.Command, args []string) error {

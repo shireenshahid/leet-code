@@ -23,6 +23,9 @@ var rootCmd = &cobra.Command{
 // This is called by main.main(). It only needs to happen once to the rootCmd.
 func Execute() {
 	rootCmd.AddCommand(twoSumCmd)
+	rootCmd.AddCommand(ContainerWithMostWaterCmd)
+	rootCmd.AddCommand(removeDuplicatesCmd)
+	rootCmd.AddCommand(longestCommonPrefixCmd)
 	err := rootCmd.Execute()
 	if err != nil {
 		os.Exit(1)
